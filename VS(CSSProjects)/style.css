@@ -1,0 +1,312 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  /* We're doing overFlow hidden so that only mainBody content will be scrolled 
+  rather then scrolling the whole page......... */
+  overflow: hidden;
+}
+.main{
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+.main-content{
+flex: 1;
+background-color: #121212;
+border-radius: 1rem;
+overflow: auto;
+padding: 0 1.5rem 0 1.5rem;
+}
+.sidebar{
+width: 340px;
+background-color: #000;
+margin-right: 0.5rem;
+}
+.music-player{
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 72px;
+background-color: black;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.nav
+{
+  background-color: #121212;
+  border-radius: 1rem; /*1rem=16px*/
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+}
+.nav-options{
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+.nav-options:hover{
+  opacity: 1;
+}
+
+.nav-options i{
+  font-size: 1.25rem;
+}
+.nav-options a{
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.library{
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 3px;
+  padding: 0.5rem 0.75rem;
+
+}
+.options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lib-options img{
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.icons
+{
+  font-size: 1.25rem;
+  display: flex;
+}
+.icons i{
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+.icons i:hover{
+  opacity: 1;
+}
+
+.box{
+  background-color: #232323;
+  height: 8rem;
+  border-radius: 0.75rem;
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+}
+.box-p1{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.box-p2{
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+.badges{
+  background-color: #ffff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  height: 2rem;
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+.sticky-nav{
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  z-index: 10;
+
+}
+.sticky-nav-icons{
+  margin-left: 0.75rem;
+}
+.sticky-nav-options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-items{
+  margin-right: 1rem;
+}
+.dark_back{
+  background-color: #000;
+  color: #fff;
+}
+@media(max-width: 1000px){
+  .hide{
+    display: none;
+  }
+}
+.card{
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.card-title{
+  font-weight: 600;
+}
+.card-info{
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.footer{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  width: 90%;
+  height: 50%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.music-player{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.album{
+  width: 25%;
+  align-items: center;
+}
+.player{
+  width: 50%;
+}
+.control{
+  width: 25%;
+}
+.player-controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-control-icon{
+  height: 1rem;
+  margin-right: 1.5rem;
+  opacity: 0.7;
+}
+.player-control-icon:hover{
+  opacity: 1;
+}
+.playback-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-bar{
+  width: 70%;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background-color: #1bd790;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+.albumimg{
+  height: 3.2rem;
+  padding: 8px; 
+  border-radius: 11px;
+}
+.albuminside{
+  display: flex;
+  flex-wrap: wrap;
+}
+.para{
+  padding: 19px 0 0 0 ;
+}
+.albumtitle{
+  margin: 0rem;
+  font-size: 16px;
+  font-weight: 700;
+}
+.albumsinger{
+  margin: 0rem;
+  padding: 2px 0 0 0 ;
+  font-size: 10px;
+  opacity: 0.8;
+}
+.alicon{
+  height: 1.5rem;
+  opacity: 0.7;
+}
+.albumicons{
+  padding: 22px;
+}
+.alicon:hover{
+  opacity: 1;
+}
+.conicon{
+  height: 1.5rem;
+  padding: 5px;
+}
+.control-icon{
+  padding: 5px;
+}
+.conicon5{
+  height: 2rem;
+}
+.conicon3{
+  height: 1rem;
+  padding: 0 0 8px 0;
+  opacity: 0.8;
+}
+.conicon4{
+  height: 0.9rem;
+  padding: 8px 8px 8px 8px;
+  opacity: 0.8;
+}
+.convol::-webkit-slider-runnable-track{
+  background-color: rgb(4, 176, 15);
+  height: 0.2rem;
+  border-radius: 100px;
+}
+.convol::-webkit-slider-thumb{
+  appearance: none;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-top: -4px;
+}
+.convol{
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 40%;
+  padding: 0 17px 13px 0;
+}

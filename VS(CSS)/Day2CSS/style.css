@@ -1,0 +1,87 @@
+/* Universal selector */
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color:red */
+}
+/* Element selector */
+h1,h2{
+    color: goldenrod;
+}
+/* id selector */
+#login{
+    background-color: aliceblue;
+    color: black;
+}
+#signup{
+    background-color: brown;
+    color: antiquewhite;
+}
+/* Class selector */
+.upvo{
+    background-color: red;
+    color: aliceblue;
+}
+/* Practice */
+
+/* .myId{ */
+div[id = "myId"]{
+    color: green;
+}
+/* Decendant selector */
+/* It means select all the anchor tags inside paragraph */
+p a{
+    color: blanchedalmond;
+    background-color: brown;
+}
+/* Adjacent sibling combination */
+p + h3{
+    color: crimson;
+    background-color: cadetblue;
+}
+/* Child combinator */
+span > button{
+    color: aliceblue;
+    background-color: rebeccapurple;
+}
+/* Attribute selector */
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color: green;
+}
+input{
+    background-color: ghostwhite;
+}
+/* Pseudo elements */
+/* hover */
+p:hover{
+    text-decoration: overline;
+}
+/* Active */
+button:active{
+    color: black;
+    background-color: antiquewhite;
+}
+/* Checked */
+input[type="radio"]:checked + label{
+    font-weight: bold;
+    color: green;
+}
+/* Nth of type */
+p:nth-of-type(2n){
+    background-color: yellowgreen;
+}
+/* pseudo elements */
+h1::first-letter{
+    color: red;
+}
+
+
+
+
+
+
+
+
+

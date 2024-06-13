@@ -1,0 +1,19 @@
+.box{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+.one{
+background-color: green;
+}
+.two{
+background-color: red;
+position: relative;
+z-index: 1;
+}
+.three{
+    background-color: rebeccapurple;
+    position: relative;
+    bottom: 120px;
+}

@@ -1,0 +1,32 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation-name: font,color;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes font{
+    from{font-size: 0px;}
+    to{font-size: 20px;}
+}
+@keyframes color{
+    from{background-color: pink;}
+    to{background-color: rebeccapurple;}
+}
+/* @media(min-width:400px){
+    h1{
+        font-size: 120px;
+    }
+    .box{
+        background-color: green;
+    }
+} */
+/* @media(orientation:landscape){
+    .box{
+        background-color: brown;
+    }
+} */
